@@ -85,12 +85,14 @@ body {
 
 .sales__details[data-state="active"] {
   opacity: 1;
-  transition: opacity 500ms linear;
-  top: 14em;
+  transition: opacity 1000ms ease-in-out;
+-webkit-animation: slide-up 1000ms ease-in-out;
+-ms-animation: slide-up 1000ms ease-in-out;
+-moz-animation: slide-up 1000ms ease-in-out;
+-o-animation: slide-up 1000ms ease-in-out;
 }
 
 .sales__details {
-  top: 20em;
   left: 0;
   margin: 25px 5% 0;
   padding: 2em;
@@ -166,3 +168,52 @@ body {
 
   text-indent: 100%;
 }
+
+
+@keyframes slide-up {
+  0% {
+    top: 18em;
+  }
+  100% {
+    top: 14em;
+  }
+}
+
+@-webkit-keyframes slide-up {
+  0% {
+    top: 18em;
+  }
+  100% {
+    top: 14em;
+  }
+}
+
+@-ms-keyframes slide-up {
+  0% {
+    top: 18em;
+  }
+  100% {
+    top: 14em;
+  }
+}
+
+@-moz-keyframes slide-up {
+  0% {
+    top: 18em;
+  }
+  100% {
+    top: 14em;
+  }
+}
+
+@-o-keyframes slide-up {
+  0% {
+    top: 18em;
+  }
+  100% {
+    top: 14em;
+  }
+}
+
+
+
